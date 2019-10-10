@@ -9,7 +9,8 @@
 
 package cse360assign2;
 
-/*
+/* Link to GitHub: https://github.com/angelica-injejikian/AddingMachine
+ * 
  * This class will conduct addition and subtraction calculations
  * and can print the total as well as a string demonstrating the
  * calculations.

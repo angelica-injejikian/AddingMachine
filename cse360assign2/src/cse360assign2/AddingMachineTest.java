@@ -1,3 +1,11 @@
+/*
+ * Author: Angelica Injejikian
+ * Class ID: 85141
+ * Assignment #: Assignment #2
+ * Description: This contains all of the Junit tests.
+ * Link to GitHub: https://github.com/angelica-injejikian/AddingMachine
+ */
+
 package cse360assign2;
 
 import static org.junit.jupiter.api.Assertions.*;
