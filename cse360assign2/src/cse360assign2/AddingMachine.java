@@ -14,12 +14,15 @@ package cse360assign2;
  * and can print the total as well as a string demonstrating the
  * calculations.
  * 
- * @param	total	the integer that contains the total of the calculations
+ * @param	total		the integer that contains the total of the calculations
+ * @param	historyOfTransactions		the string contains a history of all
+ * 										of the transactions that have occured	
  */
 
 public class AddingMachine 
 {
 	private int total;
+	public String historyOfTransactions;
 	
 	
 	/*
@@ -27,6 +30,8 @@ public class AddingMachine
 	 */
 	public AddingMachine () 
 	{
+		total = 0;
+		historyOfTransactions = "0";
 		
 	}
 	
@@ -37,7 +42,7 @@ public class AddingMachine
 	 */
 	public int getTotal () 
 	{
-		return 0;
+		return total;
 	}
 	
 	/*
@@ -45,7 +50,8 @@ public class AddingMachine
 	 */
 	public void add (int value) 
 	{
-		
+		total += value;
+		hisoryOfTransactions += " + " + value;
 	}
 	
 	/*
@@ -53,7 +59,8 @@ public class AddingMachine
 	 */
 	public void subtract (int value) 
 	{
-		
+		total -= value;
+		hisoryOfTransactions += " - " + value;
 	}
 	
 	/*
@@ -64,7 +71,7 @@ public class AddingMachine
 	 */
 	public String toString () 
 	{
-		return "";
+		return historyOfTransactions;
 	}
 
 	/*
@@ -72,6 +79,7 @@ public class AddingMachine
 	 */
 	public void clear() 
 	{
-	
+		total = 0;
+		historyOfTransactions = "0";
 	}
 }
